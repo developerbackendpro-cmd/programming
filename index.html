@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dasturlash olami — Interaktiv darslik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=1788552058">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128187;</text></svg>">
+</head>
+<body>
+
+<div class="bg-grid"></div>
+<div class="bg-glow g1"></div>
+<div class="bg-glow g2"></div>
+
+<!-- ============ SIDEBAR ============ -->
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="brand-logo">&lt;/&gt;</div>
+    <div>
+      <div class="brand-name">Dasturlash</div>
+      <div class="brand-sub">Interaktiv darslik</div>
+    </div>
+  </div>
+  <nav class="nav" id="nav"></nav>
+  <div class="sidebar-foot">
+    <kbd>←</kbd> <kbd>→</kbd> tugmalari bilan harakatlaning
+  </div>
+</aside>
+<button class="menu-btn" id="menuBtn" aria-label="Menyu">☰</button>
+<div class="scrim" id="scrim"></div>
+
+<!-- ============ MAIN ============ -->
+<main class="main">
+  <div class="deck" id="deck" style="">
+
+        <!-- ========== 0 ========== -->
+
+    <section class="slide intro-slide" data-title="Kirish" data-icon="🚀">
+      <div class="intro-wrap">
+        <div class="intro-badge">Boshlang'ich dasturchilar uchun</div>
+        <h1 class="intro-title">Dasturlash</h1>
+        <p class="intro-lead">dasturlashni chizmalar, sxemalar va animatsiyalar orqali tushunamiz.<br>20 ta mavzu, har biri alohida infografika-poster.</p>
+        <div class="intro-cards" id="introCards"></div>
+        <button class="btn btn-primary btn-lg" data-goto="1">Boshlaymiz →</button>
+      </div>
+    </section>
+
+    <!-- ========== 1 ========== -->
+
+    <section class="slide" data-title="Dasturlash tillari" data-icon="🗺️">
+      <header class="slide-head">
+        <h2>Dasturlash tili nima ?</h2>
+        <p class="lead">
+          Dasturlash tili — bu inson va kompyuter o‘rtasida muloqot qilish uchun ishlatiladigan maxsus til. Dasturchi shu til yordamida kompyuterga nima qilish kerakligini buyruqlar orqali tushuntiradi.
+          <br>
+          <br>
+          Masalan, dastur:
+        </p>
+        <ul class="lead" style="padding-left: 18px;">
+          <li>ma'lumotlarni hisoblaydi;</li>
+          <li>veb-sayt yaratadi;</li>
+          <li>mobil yoki desktop dastur yaratadi;</li>
+          <li>ma'lumotlar bazasi bilan ishlaydi;</li>
+          <li>robot va qurilmalarni boshqaradi;</li>
+          <li>sun'iy intellekt tizimlarini yaratadi.</li>
+        </ul>
+        <br>
+        <h2>Muhim fikr !</h2>
+        <p class="lead">Dasturchi loyiha talabiga qarab til tanlaydi. Bir loyihada tez ishlab chiqish muhim bo‘lsa Python qulay bo‘lishi mumkin, yuqori unumdorlik va tizim ustidan nazorat kerak bo‘lsa C++ yoki Rust ma'qul bo‘lishi mumkin. Shuning uchun dasturlash tilini tanlashda loyiha turi, tezlik, xavfsizlik, platforma, jamoa tajribasi va ekotizim hisobga olinadi.</p>
+      </header>
+      <div class="stage" data-demo="langMap"></div>
+    </section>
+
+    <!-- ========== 3 ========== -->
+
+    <section class="slide" data-title="Frontend va Backend" data-icon="🎭">
+      <header class="slide-head">
+        <h2>Frontend va Backend qanday ishlaydi ?</h2>
+      </header>
+      <div class="stage" data-demo="frontBack"></div>
+    </section>
+
+    <!-- ========== 4 ========== -->
+
+    <section class="slide" data-title="HTML - CSS — JavaScript" data-icon="🧱">
+      <header class="slide-head">
+        <h2>HTML - CSS - JAVASCRIPT</h2>
+        <p class="lead">Bitta sahifaning uch qatlami: HTML — <b>skelet</b>, CSS — <b>design</b>, JavaScript — <b>harakat</b></p>
+      </header>
+      <h2 class="lead">HTML:</h2>
+      <p class="lead"> HTML (HyperText Markup Language) — veb-sahifalarning tuzilishini yaratish uchun ishlatiladigan belgilash tili.</p>
+      <p class="lead">HTML tarixi 1989-yilda boshlangan. Uni britaniyalik olim Tim Berners-Lee CERN ilmiy markazida ishlab chiqqan. Uning asosiy maqsadi olimlar o‘rtasida hujjatlar va ma’lumotlarni internet orqali oson almashish imkonini yaratish edi.</p>
+      <br>
+      <p class="lead">Asosiy bosqichlar:</p>
+      <ul class="lead" style="padding-left: 18px;">
+        <li>1989 — Tim Berners-Lee World Wide Web g‘oyasini taklif qildi.</li>
+        <li>1991 — birinchi HTML hujjati va dastlabki web-sayt yaratildi.</li>
+        <li>1995 — HTML 2.0 standarti paydo bo‘ldi.</li>
+        <li>1997 — HTML 3.2 chiqarildi.</li>
+        <li>1999 — HTML 4.01 taqdim etildi va uzoq vaqt davomida keng ishlatildi.</li>
+        <li>2014 — HTML5 rasmiy standart sifatida e'lon qilindi.</li>
+        <li>Hozirgi davr — HTML doimiy ravishda rivojlanib, zamonaviy web-ilovalarning asosiy texnologiyalaridan biri bo‘lib qolmoqda.</li>
+      </ul>
+      <br>
+      <p class="lead">Qiziqarli fakt:</p>
+      <p class="lead">
+        HTML dastlab bugungi kabi murakkab web-saytlar yaratish uchun emas, ilmiy hujjatlarni bog‘lash va ularga havolalar berish uchun yaratilgan.
+        Tim Berners-Lee → HTML → Web → Zamonaviy Internet
+        HTML — 1989-yilda boshlangan va bugungi web texnologiyalarining poydevoriga aylangan.
+      </p>
+      <div class="lead" style="margin-top: 10px; margin-bottom: 10px; width: 100%; height: 1px; background: #9fb0d0;"></div>
+      <h2 class="lead">CSS:</h2>
+      <p class="lead">CSS (Cascading Style Sheets) — web-sahifalarning ko‘rinishi va dizaynini boshqarish uchun yaratilgan texnologiya.</p>
+      <br>
+      <p class="lead">Asosiy bosqichlar:</p>
+      <ul class="lead" style="padding-left: 18px;">
+        <li>1994 — CSS g‘oyasi Håkon Wium Lie tomonidan taklif qilindi. Maqsad HTML tarkibi va sahifa dizaynini bir-biridan ajratish edi.</li>
+        <li>1996 — CSS1 rasmiy tavsiya sifatida e'lon qilindi.</li>
+        <li>1998 — CSS2 chiqarildi. U web-sahifalarni yanada murakkab boshqarish imkoniyatlarini qo‘shdi.</li>
+        <li>2011 — CSS2.1 keng qo‘llaniladigan standartga aylandi.</li>
+        <li>2010-yillar — CSS3 rivojlanishi bilan animatsiyalar, transition, gradient, flexbox va boshqa zamonaviy imkoniyatlar paydo bo‘ldi.</li>
+        <li>Hozirgi davr — CSS alohida bitta “CSS3” versiyasi sifatida emas, balki modullar bo‘yicha doimiy rivojlanadigan standart sifatida davom etmoqda.</li>
+      </ul>
+      <div class="lead" style="margin-top: 10px; margin-bottom: 10px; width: 100%; height: 1px; background: #9fb0d0;"></div>
+      <h2 class="lead">JavaScript:</h2>
+      <p class="lead">
+        JavaScript yaratuvchisi — Brendan Eich. <br>
+        U JavaScript'ni 1995-yilda Netscape kompaniyasida ishlab chiqqan. Dastlab til juda qisqa vaqt ichida yaratilgan va web-sahifalarga interaktivlik qo‘shish maqsadida ishlab chiqilgan.
+      </p>
+      <br>
+      <p class="lead">Asosiy bosqichlar:</p>
+      <ul class="lead" style="padding-left: 18px;">
+        <li>1995 — JavaScript Brendan Eich tomonidan Netscape kompaniyasida yaratilgan.</li>
+        <li>1995 — dastlab til LiveScript deb atalgan, keyinchalik JavaScript nomini oldi.</li>
+        <li>1997 — JavaScript standartlashtirilib, ECMAScript standarti paydo bo‘ldi.</li>
+        <li>2009 — Node.js paydo bo‘ldi va JavaScript'ni server tomonida ishlatish imkoniyati kengaydi.</li>
+        <li>2015 — ECMAScript 2015 (ES6) chiqarildi. let, const, class, arrow function, Promise kabi ko‘plab zamonaviy imkoniyatlar qo‘shildi.</li>
+        <li>Bugungi kunda — JavaScript web dasturlashning eng muhim tillaridan biri bo‘lib, React, Vue, Angular, Node.js kabi ekotizimlarning asosini tashkil qiladi.</li>
+      </ul>
+      <div class="lead" style="margin-top: 10px; margin-bottom: 30px; width: 100%; height: 1px; background: #9fb0d0;"></div>
+      <div class="stage" data-demo="htmlCss"></div>
+    </section>
+
+    <!-- ========== 5 ========== -->
+
+    <section class="slide" data-title="Til va Framework" data-icon="🏗️">
+      <header class="slide-head">
+        <h2>Dasturlash tili va framework farqi</h2>
+        <p class="lead"><b>qo'lda g'ishtdan</b> (faqat til) va <b>tayyor bloklardan</b> (framework).</p>
+      </header>
+      <div class="stage" data-demo="framework"></div>
+    </section>
+
+    <!-- ========== 6 ========== -->
+
+    <section class="slide" data-title="Paketlar · npm · pip" data-icon="📦">
+      <header class="slide-head">
+        <h2>Paketlar nima uchun kerak? npm va pip</h2>
+        <p class="lead">Har narsani noldan yozish shart emas — <b>do'kondan tayyor qism</b> olasiz. Chizmada omborlar, bog'liqliklar daraxti va versiya ma'nosi.</p>
+      </header>
+      <div class="stage" data-demo="packages"></div>
+    </section>
+
+    <!-- ========== 19 ========== -->
+
+    <section class="slide" data-title="Server nima?" data-icon="🖥️">
+      <header class="slide-head">
+        <h2>Server — bu nima va qanday ishlaydi ?</h2>
+        <p class="lead">Server — boshqa qurilmalarga yoki dasturlarga ma’lumot va xizmat taqdim etadigan kompyuter yoki dasturiy tizim.</p>
+        <br>
+        <p class="lead">Oddiy qilib aytganda:</p>
+        <p class="lead">Server — so‘rovni qabul qiladi, uni qayta ishlaydi va natijani qaytaradi.</p>
+        <br>
+        <p class="lead">Server nimalar uchun ishlatiladi:</p>
+        <ul class="lead" style="padding-left: 18px;">
+          <li>🌐 Web-saytlarni ishlatish</li>
+          <li>🔐 Foydalanuvchilarni autentifikatsiya qilish</li>
+          <li>🗄️ Ma’lumotlar bazasi bilan ishlash</li>
+          <li>📡 API orqali ma’lumot almashish</li>
+          <li>📁 Fayllarni saqlash</li>
+          <li>💳 To‘lovlarni qayta ishlash</li>
+          <li>💬 Chat va real-time xizmatlar</li>
+          <li>☁️ Cloud servislarni ta’minlash</li>
+        </ul>
+      </header>
+      <div class="stage" data-demo="server"></div>
+    </section>
+
+    <!-- ========== 20 ========== -->
+
+    <section class="slide" data-title="Domen va DNS" data-icon="🌐">
+      <header class="slide-head">
+        <h2>Domen nima va qanday ishlaydi?</h2>
+        <p class="lead">Kompyuterlar bir-birini <b>raqam (IP)</b> bilan topadi, odam esa <b>nom</b>ni eslaydi. Domen — shu ikkisini bog'lovchi <b>telefon kitobi</b>. Yetti qadamli yo'lni kuzating.</p>
+      </header>
+      <div class="stage" data-demo="domain"></div>
+    </section>
+
+    <!-- ========== 21 ========== -->
+
+    <section class="slide" data-title="Protokol" data-icon="📡">
+      <header class="slide-head">
+        <h2>Protokol</h2>
+        <p class="lead">
+          Protokol — tarmoqdagi qurilmalar o‘rtasida ma’lumot almashishni tartibga soluvchi aloqa qoidalari to‘plami. U ma’lumot qanday yuborilishi, qabul qilinishi, tekshirilishi va qayta ishlanishini belgilaydi.
+        </p>
+        <br>
+        <p class="lead">Tarmoq qatlamlari</p>
+        <p class="lead">Tarmoq orqali ma’lumot uzatilishi bir nechta qatlamlar orqali amalga oshiriladi. Har bir qatlam o‘ziga tegishli vazifani bajaradi. Yuqori qatlamlarda foydalanuvchi va dastur bilan bog‘liq jarayonlar, quyi qatlamlarda esa ma’lumotni tarmoq orqali yetkazish jarayonlari amalga oshiriladi.</p>
+        <br>
+        <p class="lead">
+          TCP — ma’lumotlarni ishonchli yetkazishga mo‘ljallangan transport protokoli. U ma’lumotlarning yetib borishini, tartibini va yo‘qolgan qismlarini nazorat qiladi.
+        </p>
+        <br>
+        <p class="lead">
+          UDP — tezkor ma’lumot uzatishga mo‘ljallangan transport protokoli. U yetkazib berishni tekshirish va qayta yuborish kabi qo‘shimcha jarayonlarni minimal darajada bajaradi. Shu sababli TCP'ga nisbatan yengilroq va tezkorroq ishlaydi.
+        </p>
+         <br>
+        <p class="lead">
+          HTTP — web brauzer va server o‘rtasida ma’lumot almashishni ta’minlaydigan protokol.
+        </p>
+         <br>
+        <p class="lead">
+          HTTPS — HTTP protokolining xavfsiz shakli bo‘lib, ma’lumotlarni shifrlangan holda uzatadi. Bu foydalanuvchi va server o‘rtasidagi ma’lumotlarning himoyalanishini ta’minlaydi.
+        </p>
+        <br>
+        <p class="lead">
+          Asosiy fikr <br>
+          Protokol — tarmoqdagi qurilmalar qanday tartibda va qanday qoidalar asosida ma’lumot almashishini belgilaydi.
+        </p>
+      </header>
+      <div class="stage" data-demo="protocols"></div>
+    </section>
+
+    <!-- ========== 9 ========== -->
+
+    <section class="slide" data-title="Request &amp; Response" data-icon="✉️">
+      <header class="slide-head">
+        <h2>Request va Response aslida nima?</h2>
+        <p class="lead">Bu — <b>xat yozish va javob olish</b>. Chizmada so'rov va javobning tuzilishi, metodlar va status kodlar.</p>
+      </header>
+      <div class="stage" data-demo="reqres"></div>
+    </section>
+
+    <!-- ========== 7 ========== -->
+
+    <section class="slide" data-title="Cache" data-icon="⚡">
+      <header class="slide-head">
+        <h2>Cache nima uchun kerak?</h2>
+        <p class="lead">Cache — <b>tez-tez kerak bo'ladigan narsani qo'l ostida saqlash</b>. Ikki yo'l yonma-yon: cachesiz 800 ms, cache bilan 15 ms.</p>
+      </header>
+      <div class="stage" data-demo="cache"></div>
+    </section>
+
+    <!-- ========== 8 ========== -->
+
+    <section class="slide" data-title="Ma'lumotlar bazalari" data-icon="🗄️">
+      <header class="slide-head">
+        <h2>Database turlari va farqlari</h2>
+        <p class="lead">Ma'lumotni saqlashning bir necha shakli bor. Har bir kartochkada ma'lumot qanday ko'rinishda yotishi chizib berilgan.</p>
+      </header>
+      <div class="stage" data-demo="database"></div>
+    </section>
+
+    <!-- ========== 10 ========== -->
+
+    <section class="slide" data-title="CRUD va filterlar" data-icon="🔁">
+      <header class="slide-head">
+        <h2>CRUD amallari va filterlar</h2>
+        <p class="lead">Har qanday ilova aslida 4 ta ishni qiladi: <b>C</b>reate, <b>R</b>ead, <b>U</b>pdate, <b>D</b>elete. Pastda esa filter va qidiruv chizmasi.</p>
+      </header>
+      <div class="stage" data-demo="crud"></div>
+    </section>
+
+    <!-- ========== 11 ========== -->
+
+    <section class="slide" data-title="API — bitta miya, ko'p ekran" data-icon="🔌">
+      <header class="slide-head">
+        <h2>Backend API: web, desktop va mobil uchun yagona markaz</h2>
+        <p class="lead">Bitta backend — uchta mijoz. So'rov API'ga boradi, API bazadan oladi va <b>hammasiga bir xil ma'lumot</b> qaytaradi.</p>
+      </header>
+      <div class="stage" data-demo="api"></div>
+    </section>
+
+    <!-- ========== 12 ========== -->
+
+    <section class="slide" data-title="Authentication vs Authorization" data-icon="🔐">
+      <header class="slide-head">
+        <h2>Authentication va Authorization farqi</h2>
+        <p class="lead"><b>Authentication</b> — "sen kimsan?" (pasport tekshiruvi). <b>Authorization</b> — "senga ruxsatmi?" (qaysi xonaga kira olasan). Ikkalasi yonma-yon chizmada.</p>
+      </header>
+      <div class="stage" data-demo="auth"></div>
+    </section>
+
+    <!-- ========== 13 ========== -->
+
+    <section class="slide" data-title="JWT token" data-icon="🎟️">
+      <header class="slide-head">
+        <h2>JWT token qanday ishlaydi?</h2>
+        <p class="lead">JWT — <b>imzolangan bilet</b>. Uch qismi, imzo qanday tekshirilishi va nega uni qalbakilashtirib bo'lmasligi.</p>
+      </header>
+      <div class="stage" data-demo="jwt"></div>
+    </section>
+
+    <!-- ========== 14 ========== -->
+
+    <section class="slide" data-title="Backup" data-icon="💾">
+      <header class="slide-head">
+        <h2>Backup — bu nima va nega hayotiy?</h2>
+        <p class="lead">Backup — ma'lumotning <b>nusxasi</b>. Vaqt o'qi, 3-2-1 qoidasi va "qancha ma'lumot yo'qoladi" degan savol.</p>
+      </header>
+      <div class="stage" data-demo="backup"></div>
+    </section>
+
+    <!-- ========== 15 ========== -->
+
+    <section class="slide" data-title="Rate limit" data-icon="🚦">
+      <header class="slide-head">
+        <h2>Rate limit qanday ishlaydi?</h2>
+        <p class="lead">Serverda ham "navbat" bor. <b>Token savati</b> qanday ishlashi va 429 javobi qachon qaytishi.</p>
+      </header>
+      <div class="stage" data-demo="rateLimit"></div>
+    </section>
+
+    <!-- ========== 16 ========== -->
+
+    <section class="slide" data-title="Docker" data-icon="🐳">
+      <header class="slide-head">
+        <h2>Docker nima va qanday ishlaydi?</h2>
+        <p class="lead">"Mening kompyuterimda ishlayapti-ku!" muammosi: <b>konteynersiz</b> va <b>konteyner bilan</b> tarqatish yonma-yon.</p>
+      </header>
+      <div class="stage" data-demo="docker"></div>
+    </section>
+
+    <!-- ========== 17 ========== -->
+
+    <section class="slide" data-title="Mobil: Flutter vs RN" data-icon="📱">
+      <header class="slide-head">
+        <h2>Mobil dasturlash: Flutter va React Native</h2>
+        <p class="lead">Ikkalasi ham <b>bitta koddan ikki platforma</b> beradi, lekin ekranga chizish yo'li butunlay boshqacha.</p>
+      </header>
+      <div class="stage" data-demo="mobile"></div>
+    </section>
+
+    <!-- ========== 18 ========== -->
+
+    <section class="slide" data-title="Umumiy xulosa" data-icon="🏁">
+      <header class="slide-head">
+        <h2>Hammasi bir joyda</h2>
+        <p class="lead">Bir foydalanuvchi tugmani bosganda nimalar sodir bo'ladi? Barcha mavzular shu yagona yo'lda uchraydi.</p>
+      </header>
+      <div class="stage" data-demo="summary"></div>
+    </section>
+  </div>
+
+  <div class="controls">
+    <button class="btn" id="prevBtn">← Orqaga</button>
+    <div class="dots" id="dots"></div>
+    <button class="btn btn-primary" id="nextBtn">Oldinga →</button>
+  </div>
+</main>
+
+<script src="assets/js/core.js?v=1788552058"></script>
+<script src="assets/js/kit.js?v=1788552058"></script>
+<script src="assets/js/scenes-1.js?v=1788552058"></script>
+<script src="assets/js/scenes-2.js?v=1788552058"></script>
+<script src="assets/js/scenes-3.js?v=1788552058"></script>
+<script src="assets/js/scenes-4.js?v=1788552058"></script>
+<script src="assets/js/scenes-5.js?v=1788552058"></script>
+<script src="assets/js/scenes-6.js?v=1788552058"></script>
+<script>App.init();</script>
+</body>
+</html>
